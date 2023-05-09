@@ -1,0 +1,34 @@
+{
+  "name": "reactssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.20.12",
+    "@reduxjs/toolkit": "^1.9.1",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.8.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "webpack-merge": "^5.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:server": "webpack --config ./config/webpack.config.js --watch",
+    "build:client": "webpack --config ./config/client.config.js --watch",
+    "start": "nodemon ./build/server/server_bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
